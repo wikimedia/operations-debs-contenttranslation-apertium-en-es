@@ -1,0 +1,30 @@
+apertium-en-es (0.8.0+svn~57502-1) trusty; urgency=low
+
+  [ Tino Didriksen ]
+  * New upstream release based on SVN snapshot.
+
+  [ Kartik Mistry ]
+  * debian/control:
+    + Added myself to uploaders.
+    + Updated Standards-Version to 3.9.6
+  * Added debian/watch file.
+
+ -- Kartik Mistry <kartik@debian.org>  Wed, 08 Oct 2014 10:00:15 +0530
+
+apertium-en-es (0.6.0-1.1) unstable; urgency=low
+
+  * Non-maintainer upload.
+  * Rebuild against apertium 3.1 fix build-depends and configure.ac
+    accordingly. Rebuild ./configure to avoid relying on autoconf at
+    build-time. Fix FTBFS. Thanks to Thomas Viehmann for the patch.
+    (Closes: #527792)
+  * debian/rules: clean up more properly upon "clean"
+
+ -- Stefano Zacchiroli <zack@debian.org>  Tue, 08 Sep 2009 21:44:37 +0200
+
+apertium-en-es (0.6.0-1) unstable; urgency=low
+
+  * Initial release (Closes: #471720)
+
+ -- Francis Tyers <ftyers@prompsit.com>  Wed, 19 Mar 2008 19:53:51 +0000
+
