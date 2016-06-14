@@ -1,15 +1,34 @@
-apertium-en-es (0.8.0+svn~57502-1) trusty; urgency=low
+apertium-en-es (0.8.0+svn~57502-2+wmf1) jessie-wikimedia; urgency=low
+
+  * Rebuild for Jessie.
+
+ -- Kartik Mistry <kartik@debian.org>  Tue, 23 Aug 2016 12:01:42 +0530
+
+apertium-en-es (0.8.0~r57502-2) unstable; urgency=low
 
   [ Tino Didriksen ]
-  * New upstream release based on SVN snapshot.
+  * debian/control:
+    + Updated to Standards-Version 3.9.8
+    + Fixed Vcs-Git URL
+    + No longer depends on locales
+  * debian/rules:
+    + Simplified rules, removed use of locales.
+  * Fixed debian/copyright.
+
+ -- Kartik Mistry <kartik@debian.org>  Tue, 14 Jun 2016 19:31:00 +0530
+
+apertium-en-es (0.8.0~r57502-1) unstable; urgency=low
+
+  [ Tino Didriksen ]
+  * New upstream release.
+  * Significant changes in svn since tarball, so mixing new build scripts with
+    old data files
+  * Re-done packaging to take advantage of debhelper 9
 
   [ Kartik Mistry ]
-  * debian/control:
-    + Added myself to uploaders.
-    + Updated Standards-Version to 3.9.6
   * Added debian/watch file.
 
- -- Kartik Mistry <kartik@debian.org>  Wed, 08 Oct 2014 10:00:15 +0530
+ -- Kartik Mistry <kartik@debian.org>  Fri, 10 Jul 2015 12:12:54 +0530
 
 apertium-en-es (0.6.0-1.1) unstable; urgency=low
 
@@ -27,4 +46,3 @@ apertium-en-es (0.6.0-1) unstable; urgency=low
   * Initial release (Closes: #471720)
 
  -- Francis Tyers <ftyers@prompsit.com>  Wed, 19 Mar 2008 19:53:51 +0000
-
